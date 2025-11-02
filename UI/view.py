@@ -53,7 +53,7 @@ class View:
         self.lista_auto = ft.ListView(expand=True, spacing=5, padding=10, auto_scroll=True)
 
         # TextField per ricerca auto per modello
-        self.input_modello_auto = ft.TextField(label="Modello")
+        self.input_modello_auto = ft.TextField(label="Modello", on_submit=self.controller.cerca_automobili )
 
         # ListView per mostrare il risultato della ricerca auto per modello
         self.lista_auto_ricerca = ft.ListView(expand=True, spacing=5, padding=10, auto_scroll=True)
